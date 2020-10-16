@@ -1,0 +1,44 @@
+%blockstyle {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.header {
+    margin-top: 45px;
+    flex-wrap: wrap;
+    @extend %blockstyle;
+
+    .header-logo {
+        margin-right: 45px;
+    }
+    .search-cinema {
+        @extend %blockstyle;
+        flex: 2;
+
+        .search-cinema-input {
+            height: 40px;
+            background: rgba(196, 196, 196, 0.5);
+            border-radius: 5px;
+            flex:2;
+            color:#eee;
+
+            &::placeholder {
+                @include adaptiv-font(14, 12);
+                line-height: 16px;
+                padding-left: 18px;
+                color: #AEAEAE;
+            }
+        }
+        .search-icon {
+            margin-left: 18px;
+        }
+    }
+    .account-user {
+        @extend %blockstyle;
+        margin-left: 55px;
+    }
+    .bookmarks-icon {
+        margin-right: 20px;
+    }
+}

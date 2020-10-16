@@ -1,0 +1,69 @@
+@media (max-width: 1000px) {
+    .container {
+        width: 95%;
+    }
+    .content-section-main-header {
+        width: 15%;
+
+        .content-section-main-item-image {
+            display: none;
+        }
+       
+    }
+    .movie-invitation-actor {
+        display: none;
+    }
+   .content-section {
+       display: block;
+       padding:15px;
+   }
+   .movie-invitation .movie-invitation-image {
+    background: url(../img/dsfsdf.png);
+    width: 240px;
+    height: 340px;
+    .content-section-main {
+        margin: 0;
+    }
+    .content-section-main-description {
+        flex:1;
+    }
+    .content-section-main .content-section-main-description-update, .movie-invitation {
+        margin-left:auto ;
+        margin-right: auto;
+    }
+    .content-section-main {
+        margin-right: 45px;
+    }
+    .content-section-main-description-text  {
+        margin:10px;
+    }   
+}
+    
+}
+
+@media (max-width:602px) {
+    .container {
+        width: 100%;
+    }
+    .search-cinema {
+        flex: 1;
+        order: 5;
+    }
+    .content-section-main .content-section-main-description-update, .movie-invitation {
+        margin: auto;
+    }
+    .content-section-main {
+        margin-left:0;
+    }
+    
+}
+@media (max-width:690px) {
+    .hero-content-info-more {
+        margin-left:0 ;
+        margin-top: 15px;
+    }
+    .content-section-main .content-section-main-description .content-section-main-description-text-paragraph {
+        line-height: 110%;
+    }
+    
+}

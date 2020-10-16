@@ -1,0 +1,76 @@
+%blockstyle {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    margin-top: 180px;
+    color:#fff;
+    margin-bottom: 62px;
+}
+.hero-content-main-title {
+    font-family: 'Playfair Display SC', serif;
+    @include adaptiv-font(48, 32);
+    line-height: 64px;
+}
+.hero-content-main-text {
+    @include adaptiv-font(20, 16);
+    line-height: 23px;
+    color: #787878;
+}
+.hero-content-info {
+    margin-top: 36px;
+    flex-wrap: wrap;
+
+    @extend %blockstyle;
+
+    .hero-content-info-main {
+        @extend %blockstyle;
+        
+        .hero-content-info-main-button {
+          
+            width: 72px;
+            height: 27px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            @include adaptiv-font(16, 13);
+            line-height: 19px;
+            color: #111;
+            margin-right: 20px;
+        }
+
+        .hero-content-info-main-trailer {
+            margin-left: 33px;
+            @extend %blockstyle;
+           
+
+            .hero-content-info-main-trailer-button {
+                width: 30px;
+                height: 30px;
+                border-radius:50%;
+                background:#fff url(../img/trailer-button.svg) no-repeat center;
+                margin-right: 15px;
+            };
+        }
+        
+    }
+}
+
+.hero-content-info-more {
+    margin-left: 33px;
+    @extend %blockstyle;
+
+    .hero-content-info-main-more-button {
+        width: 30px;
+        height: 30px;
+        border-radius:50%;
+        background:#fff url(../img/more-button.svg) no-repeat center;
+        margin-right: 15px;
+    };
+}
+.hero-content-info-main-trailer-label {
+    display: flex;
+    align-items: center;
+}
+

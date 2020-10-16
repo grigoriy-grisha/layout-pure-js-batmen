@@ -1,0 +1,443 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #0A090A url(../img/main-bg.png) no-repeat top;
+  font-family: "Roboto", sans-serif;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+img {
+  display: block;
+}
+.hero-content-info-main {
+  flex-wrap: wrap;
+}
+
+.hero-content-info-more, .hero-content-info .hero-content-info-main .hero-content-info-main-trailer, .hero-content-info .hero-content-info-main, .hero-content-info, .header .account-user, .header .search-cinema, .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  margin-top: 45px;
+  flex-wrap: wrap;
+}
+.header .header-logo {
+  margin-right: 45px;
+}
+.header .search-cinema {
+  flex: 2;
+}
+.header .search-cinema .search-cinema-input {
+  height: 40px;
+  background: rgba(196, 196, 196, 0.5);
+  border-radius: 5px;
+  flex: 2;
+  color: #eee;
+}
+.header .search-cinema .search-cinema-input::placeholder {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
+  line-height: 16px;
+  padding-left: 18px;
+  color: #AEAEAE;
+}
+.header .search-cinema .search-icon {
+  margin-left: 18px;
+}
+.header .account-user {
+  margin-left: 55px;
+}
+.header .bookmarks-icon {
+  margin-right: 20px;
+}
+
+.hero-content-info-more, .hero-content-info .hero-content-info-main .hero-content-info-main-trailer, .hero-content-info .hero-content-info-main, .hero-content-info, .header, .header .search-cinema, .header .account-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  margin-top: 180px;
+  color: #fff;
+  margin-bottom: 62px;
+}
+
+.hero-content-main-title {
+  font-family: "Playfair Display SC", serif;
+  font-size: calc(32px + 16 * ((100vw - 320px) / 1120));
+  line-height: 64px;
+}
+
+.hero-content-main-text {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
+  line-height: 23px;
+  color: #787878;
+}
+
+.hero-content-info {
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+.hero-content-info .hero-content-info-main .hero-content-info-main-button {
+  width: 72px;
+  height: 27px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  font-size: calc(13px + 3 * ((100vw - 320px) / 1120));
+  line-height: 19px;
+  color: #111;
+  margin-right: 20px;
+}
+.hero-content-info .hero-content-info-main .hero-content-info-main-trailer {
+  margin-left: 33px;
+}
+.hero-content-info .hero-content-info-main .hero-content-info-main-trailer .hero-content-info-main-trailer-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff url(../img/trailer-button.svg) no-repeat center;
+  margin-right: 15px;
+  border: none;
+}
+.companies-wrapper {
+  margin-top: 383px;
+}
+.grisha-slider-item img {
+  width: 100%;
+}
+.hero-content-info-more {
+  margin-left: 33px;
+}
+.hero-content-info-more .hero-content-info-main-more-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff url(../img/more-button.svg) no-repeat center;
+  margin-right: 15px;
+}
+
+.hero-content-info-main-trailer-label {
+  display: flex;
+  align-items: center;
+}
+
+.content-section-main .content-section-main-description-update, .movie-invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-section {
+  background: #FFFFFF;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  padding-bottom: 83px;
+}
+
+.movie-invitation {
+  position: relative;
+  top: -35px;
+  flex: 0.7;
+}
+.movie-invitation .movie-invitation-button {
+  padding: 10px 44px;
+  width: 100%;
+  height: 36px;
+  background: #FF8F27;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+.movie-invitation .movie-invitation-image {
+  background: url(../img/cover.png);
+  width: 180px;
+  height: 260px;
+}
+.movie-invitation .movie-invitation-actor-title {
+  margin-bottom: 12px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+}
+.movie-invitation .movie-invitation-actor-person-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  color: #222;
+}
+.companies-hor-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-section-main {
+  flex: 5;
+  margin-left: 45px;
+}
+.content-section-main .content-section-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.content-section-main .content-section-main-header .content-section-main-item {
+  text-decoration: none;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1120));
+  line-height: 21px;
+  color: #000000;
+  
+}
+.content-section-main .content-section-main-description {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content-section-main .content-section-main-description .content-section-main-description-text {
+  flex: 2;
+}
+.content-section-main .content-section-main-description .content-section-main-description-text-paragraph {
+  margin:0 auto;
+  font-size: calc(11px + 5 * ((100vw - 320px) / 1120));
+  line-height: 180%;
+  white-space: pre-line;
+  overflow: hidden;
+  word-break: break-all;
+}
+.content-section-main .content-section-main-description .content-section-main-description-title {
+  font-weight: 900;
+  font-size: calc(13px + 3 * ((100vw - 320px) / 1120));
+  line-height: 140%;
+  margin: 32px 0 22px 0;
+}
+.content-section-main .content-section-main-description-update {
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.content-section-main .content-section-main-description-update .sub-on-update {
+  margin-bottom: 14px;
+}
+.content-section-main .content-section-main-description-update .sub-on-update .sub-on-update-title {
+  font-weight: 900;
+  font-size: calc(13px + 3 * ((100vw - 320px) / 1120));
+  line-height: 150%;
+}
+.content-section-main .content-section-main-description-update .your-email {
+  margin-bottom: 48px;
+  display: flex;
+}
+.content-section-main .content-section-main-description-update .your-email .your-email-input {
+  height: 40px;
+}
+.content-section-main .content-section-main-description-update .your-email .your-email-input::placeholder {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
+  line-height: 16px;
+  color: #9B9B9B;
+  padding-left: 15px;
+}
+.content-section-main .content-section-main-description-update .your-email .your-email-input-button {
+  width: 43.5px;
+  background: #FF8F27 url(../img/check.svg) no-repeat center;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+
+  .search-cinema {
+    min-width: 100%;
+    order: 10;
+  }
+  /* .container {
+    width: 95%;
+  } */
+
+  .content-section-main-header {
+    width: 15%;
+  }
+  .content-section-main-header .content-section-main-item-image {
+    display: none;
+  }
+
+  .movie-invitation-actor {
+    display: none;
+  }
+
+  .content-section {
+    display: block;
+    padding: 15px;
+  }
+
+  .movie-invitation .movie-invitation-image {
+    background: url(../img/dsfsdf.png);
+    width: 240px;
+    height: 340px;
+  }
+  .movie-invitation .movie-invitation-image .content-section-main {
+    margin: 0;
+  }
+  .movie-invitation .movie-invitation-image .content-section-main-description {
+    flex: 1;
+  }
+  /* .movie-invitation .movie-invitation-image .content-section-main .content-section-main-description-update, .movie-invitation .movie-invitation-image .movie-invitation {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  .movie-invitation .movie-invitation-image .content-section-main {
+    margin-right: 45px;
+  }
+  .movie-invitation .movie-invitation-image .content-section-main-description-text {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .content-section-main-description {
+    flex-direction: column;
+  }
+
+@media (max-width: 602px) {
+  .content-section-main-description {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+
+  
+
+  /* .content-section-main .content-section-main-description-update, .movie-invitation {
+    margin: auto;
+  } */
+
+  .content-section-main {
+    margin-left: 0;
+  }
+}
+@media (max-width: 690px) {
+  .hero-content-info-more {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .content-section-main .content-section-main-description .content-section-main-description-text-paragraph {
+    line-height: 110%;
+  }
+}
+.companies-hor-item img {
+  width: 100%;
+}
+
+
+
+.modal-tiser {
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.modal-tiser .modal-tiser-window {
+  max-width: 780px;
+  width: 70%;
+  min-height: 552px;
+  background: #343434;
+  border-radius: 5px;
+  margin: auto;
+  padding: 40px 45px;
+}
+.modal-tiser .modal-tiser-window .modal-tiser-header {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: calc(30px + 18 * ((100vw - 320px) / 1120));
+}
+.modal-tiser .modal-tiser-window .modal-tiser-window-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close {
+  color: #fff;
+  font-size: calc(30px + 18 * ((100vw - 320px) / 1120));
+  border: none;
+  background: transparent;
+}
+
+.modal-is-open {
+  display: flex;
+}
+.companies-wrapper {
+  margin-top: 300px;
+}
+}

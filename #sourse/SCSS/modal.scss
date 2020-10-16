@@ -1,0 +1,51 @@
+.modal-tiser {
+	overflow: auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+    display: none;
+    
+    
+	.modal-tiser-window {
+        max-width: 780px;
+        width: 70%;
+        min-height: 552px;
+        background: #343434;
+        border-radius: 5px;
+        margin: auto;
+        padding: 40px 45px;
+
+        .modal-tiser-header {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            color: #fff;
+            @include adaptiv-font(48,30);
+
+           
+        }
+
+        .modal-tiser-window-video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.modal-close {
+    color: #fff;
+    @include adaptiv-font(48,30);
+    border: none;
+    background: transparent;
+}
+.modal-is-open {
+    display: flex;
+}
